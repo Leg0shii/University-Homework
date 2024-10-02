@@ -1,0 +1,142 @@
+// a lead pencil, with a slightly dulled point,
+// including the eraser and thingy that holds the eraser.
+// the pencil is "standing up" with the point at <0, 0, 0>
+
+#include "shapes.inc"
+
+#declare EraserPink = color red 0.737 green 0.243 blue 0.188
+#declare PencilOrange = color red 0.984 green 0.457 blue 0.141
+
+#declare Paint = texture {pigment{PencilOrange}
+  finish
+      {
+         ambient 0.5
+         diffuse 0.05
+         brilliance 1
+         specular 0.3
+         reflection 0.03
+      }
+}
+
+#declare T_Holder =
+   texture
+   {
+      pigment
+      {
+         color rgb <1, 197/255, 57/255>
+      }
+      finish
+      {
+         ambient 0.35
+         diffuse 0.2
+         brilliance 1
+         specular 0.3
+         reflection 0.071933
+      }
+   }
+
+#declare pencilbody=
+difference
+{
+union
+{
+ difference
+ {
+  intersection
+  {
+   plane{z, .10825 texture{Paint}}
+   plane{z, .10825 rotate 60*y texture {Paint}}
+   plane{z, .10825 rotate 120*y texture {Paint}}
+   plane{z, .10825 rotate 180*y texture {Paint}}
+   plane{z, .10825 rotate 240*y texture {Paint}}
+   plane{z, .10825 rotate 300*y texture {Paint}}
+   plane{y, 4.5}
+   plane{y, 0 inverse}
+  }
+  object{QCone_Y inverse scale<.13,1,.13>}
+  texture{pigment {color rgb <193/255, 162/255, 139/255>}}
+ }
+
+ intersection
+ {
+  object{QCone_Y scale<.1301,1,.1301>}
+  plane{y, 0 inverse}
+  plane{y, .3}
+  texture
+  {
+  pigment {Gray10}
+  finish {ambient 0.35
+  diffuse 0.2
+  brilliance 1
+  specular 0.3
+  reflection 0.071933}
+  }
+ }
+}
+plane {y, .12}
+}
+
+#declare eraser =
+superellipsoid
+{
+  <1.0,
+  .248>
+  texture {pigment {EraserPink}}
+  rotate <90,0,0>
+  scale <.12,.15,.12>
+  translate <0,6.6,0>
+}
+
+#declare ridge =
+torus
+{
+  0.11,
+  0.023
+  texture {T_Holder}
+}
+
+#declare holder =
+union
+{
+cylinder
+{
+  6*y,  6.564*y,  .125
+  texture {T_Holder}
+}
+
+cylinder
+{
+  6.23*y,  6.334*y,  .127
+  texture {
+      pigment
+      {
+         color rgb <0.772549, 0.039216, 0.129412>
+      }
+      finish
+      {
+         ambient 0.35
+         diffuse 0.2
+         brilliance 1
+         specular 0.3
+         reflection 0.071933
+      }
+   }
+}
+
+object {ridge translate <0,6.069,0>}
+object {ridge translate <0,6.115,0>}
+object {ridge translate <0,6.161,0>}
+object {ridge translate <0,6.207,0>}
+object {ridge translate <0,6.357,0>}
+object {ridge translate <0,6.403,0>}
+object {ridge translate <0,6.449,0>}
+object {ridge translate <0,6.495,0>}
+}
+
+#declare pencil = union
+{
+object {pencilbody}
+object {eraser translate -1.5*y}
+object {holder translate -1.5*y}
+translate <0,-.12,0>
+}

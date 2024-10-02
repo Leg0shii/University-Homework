@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE LIST SYSTEM
+        "C:\Users\benja\Desktop\Coding\20 Uni\University-Homework\Bachelor-Computer-Science\Semester3\SWT\DTD\BestellungDTD.dtd">
+
+<BESTELLUNG id="B01"> 
+	<POSTEN>
+		<ARTIKEL_NAME> Jogginghose </ARTIKEL_NAME>
+		<ARTIKEL_ID> 12345 </ARTIKEL_ID>
+		<EINZELPREIS> 34,56 </EINZELPREIS>
+		<STUECKZAHL> 2 </STUECKZAHL>
+		<POSTENSUMME> 69,12 </POSTENSUMME>
+	</POSTEN>
+	<KUNDE typ="privat">
+		<KUNDEN_ID> Kd001 </KUNDEN_ID>
+	</KUNDE>
+	<BESTELLSUMME> 69,12 </BESTELLSUMME>
+</BESTELLUNG>
+
