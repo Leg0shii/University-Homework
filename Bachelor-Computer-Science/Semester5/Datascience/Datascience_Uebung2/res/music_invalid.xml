@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE music[
+	<!ELEMENT music (album*)>
+	<!ELEMENT album (name, tracks)>
+	<!ATTLIST album 
+	   	id CDATA #REQUIRED>
+	
+	<!ELEMENT tracks (track+)>
+	
+	<!ELEMENT track (title, (artist | vocals)?, composer, genre, year)>
+	<!ATTLIST track 
+		id CDATA #REQUIRED
+	   	tracknumber CDATA #REQUIRED
+	   	discnumber CDATA #REQUIRED
+	   	length CDATA #IMPLIED>
+	
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT title (#PCDATA)>
+	<!ELEMENT artist (#PCDATA)>
+	<!ELEMENT vocals (#PCDATA)>
+	<!ELEMENT composer (#PCDATA)>
+	<!ELEMENT genre (#PCDATA)>
+	<!ELEMENT year (#PCDATA)>
+]>
+
+<music>
+	<album id="66604">
+		<name>Distant Worlds IV: More Music From Final Fantasy</name>
+		<tracks>
+			<track id="10100" tracknumber="6" discnumber="1" length="131">
+				<title>Apocalypsis Noctis</title>
+				<composer>Yoko Shimomura</composer>
+				<genre>OST</genre>
+				<year>2017</year>
+			</track>
+			<track id="666047" tracknumber="8" discnumber="1" length="342">
+				<title>Dragonsong</title>
+				<artist>Susan Calloway</artist>
+				<composer>Nobuo Uematsu</composer>
+				<genre>OST</genre>
+				<year>2017</year>
+			</track>
+			<track id="666051" tracknumber="10" discnumber="1" length="212">
+				<title>Fang's Theme</title>
+				<composer>Nobuo 1</composer>
+				<genre>OST</genre>
+				<year>2017</year>
+			</track>
+			<track id="666053" tracknumber="14" discnumber="1" length="2102">
+				<title>Torn from the Heavens</title>
+				<composer>Masayoshi Soken</composer>
+				<genre>OST</genre>
+				<year>2017</year>
+			</track>
+		</tracks>
+	</album>
+	<album id="66601">
+		<name>Distant Worlds: Music From Final Fantasy</name>
+		<tracks>
+			<track id="666011" tracknumber="15" discnumber="9" length="735">
+				<title>"Opera 'Maria and Draco'"</title>
+				<artist>Maria</artist>
+				<composer>Nobuo Uematsu</composer>
+				<genre>OST</genre>
+				<year>2007</year>
+			</track>
+		</tracks>
+	</album>
+	<album id="66603">
+		<name>Distant Worlds III: More Music From Final Fantasy</name>
+		<tracks>
+			<track id="666028" tracknumber="2" discnumber="1" length="291">
+				<title>Battle &amp; Victory Theme Medley</title>
+				<composer>Nobuo Uematsu</composer>
+				<genre>OST</genre>
+				<year>2015</year>
+			</track>
+		</tracks>
+	</album>
+</music>

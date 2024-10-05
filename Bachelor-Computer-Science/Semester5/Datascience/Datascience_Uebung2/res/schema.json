@@ -1,0 +1,159 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$ref": "#/definitions/root",
+  "definitions": {
+    "tracks": {
+      "title": "tracks",
+      "type": "object",
+      "required": [
+        "track"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "track": {
+          "anyOf": [
+            {
+              "type": "array",
+              "title": "track",
+              "items": {
+                "title": "track",
+                "type": "object",
+                "required": [
+                  "id",
+                  "tracknumber",
+                  "discnumber",
+                  "title",
+                  "composer",
+                  "genre",
+                  "year"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "number"
+                  },
+                  "tracknumber": {
+                    "type": "number"
+                  },
+                  "discnumber": {
+                    "type": "number"
+                  },
+                  "length": {
+                    "type": "number"
+                  },
+                  "title": {
+                    "type": "string"
+                  },
+                  "artist": {
+                    "type": "string"
+                  },
+                  "composer": {
+                    "type": "string"
+                  },
+                  "genre": {
+                    "type": "string"
+                  },
+                  "year": {
+                    "type": "number"
+                  }
+                }
+              }
+            },
+            {
+              "title": "track",
+              "type": "object",
+              "required": [
+                "id",
+                "tracknumber",
+                "discnumber",
+                "title",
+                "composer",
+                "genre",
+                "year"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "id": {
+                  "type": "number"
+                },
+                "tracknumber": {
+                  "type": "number"
+                },
+                "discnumber": {
+                  "type": "number"
+                },
+                "length": {
+                  "type": "number"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "artist": {
+                  "type": "string"
+                },
+                "composer": {
+                  "type": "string"
+                },
+                "genre": {
+                  "type": "string"
+                },
+                "year": {
+                  "type": "number"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "album": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "tracks"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "number"
+        },
+        "name": {
+          "type": "string"
+        },
+        "tracks": {
+          "$ref": "#/definitions/tracks"
+        }
+      }
+    },
+    "music": {
+      "title": "music",
+      "type": "object",
+      "required": [
+        "album"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "album": {
+          "type": "array",
+          "title": "album",
+          "items": {
+            "$ref": "#/definitions/album"
+          }
+        }
+      }
+    },
+    "root": {
+      "type": "object",
+      "required": [
+        "music"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "music": {
+          "$ref": "#/definitions/music"
+        }
+      }
+    }
+  }
+}

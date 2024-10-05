@@ -1,0 +1,87 @@
+{
+	"music": {
+		"album": [
+			{
+				"id": 66604,
+				"name": "Distant Worlds IV: More Music From Final Fantasy",
+				"tracks": {
+					"track": [
+						{
+							"id": 666045,
+							"tracknumber": 6,
+							"discnumber": 1,
+							"length": 131,
+							"title": "Apocalypsis Noctis",
+							"composer": "Yoko Shimomura",
+							"genre": "OST",
+							"year": 2017
+						},
+						{
+							"id": 666047,
+							"tracknumber": 8,
+							"discnumber": 1,
+							"length": 342,
+							"title": "Dragonsong",
+							"artist": "Susan Calloway",
+							"composer": "Nobuo Uematsu",
+							"genre": "OST",
+							"year": 2017
+						},
+						{
+							"id": 666051,
+							"tracknumber": 12,
+							"discnumber": 1,
+							"title": "Fang's Theme",
+							"composer": "Masashi Hamauzu",
+							"genre": "OST",
+							"year": 2017
+						},
+						{
+							"id": 666053,
+							"tracknumber": 14,
+							"discnumber": 1,
+							"length": 267,
+							"title": "Torn from the Heavens",
+							"composer": "Masayoshi Soken",
+							"genre": "OST",
+							"year": 2017
+						}
+					]
+				}
+			},
+			{
+				"id": 66601,
+				"name": "Distant Worlds: Music From Final Fantasy",
+				"tracks": {
+					"track": {
+						"id": 666011,
+						"tracknumber": 11,
+						"discnumber": 1,
+						"length": 735,
+						"title": " Opera 'Maria and Draco'",
+						"artist": "Maria, Draco und Ralse",
+						"composer": "Nobuo Uematsu",
+						"genre": "OST",
+						"year": 2007
+					}
+				}
+			},
+			{
+				"id": 66603,
+				"name": "Distant Worlds III: More Music From Final Fantasy",
+				"tracks": {
+					"track": {
+						"id": 666028,
+						"tracknumber": 2,
+						"discnumber": 1,
+						"length": 291,
+						"title": "Battle & Victory Theme Medley",
+						"composer": "Nobuo Uematsu",
+						"genre": "OST",
+						"year": 2015
+					}
+				}
+			}
+		]
+	}
+}

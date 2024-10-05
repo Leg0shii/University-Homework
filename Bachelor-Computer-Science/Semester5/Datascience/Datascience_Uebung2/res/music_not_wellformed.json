@@ -1,0 +1,44 @@
+{
+	"music": {
+		"album": [
+			{
+				"id": 66604,
+				"name": "Distant Worlds IV: More Music From Final Fantasy",
+				"tracks": {
+					"track": [
+						{
+							"id": 666045,
+							"tracknumber": 6,
+							"discnumber": 1,
+							"length": 131,
+							"title": "Apocalypsis Noctis",
+							"composer": "Yoko Shimomura",
+							"genre": "OST",
+							"year": 2017
+						},
+						{
+							"id": 666047,
+							"tracknumber": 8,
+							"discnumber": 1,
+							"length": 342,
+							"title": "Dragonsong",
+							"artist": "Susan Calloway",
+							"composer": "Nobuo Uematsu",
+							"genre": "OST",
+							"year": 2017
+						},
+						{
+							"id": 666051,
+							"tracknumber": 12,
+							"discnumber": 1,
+							"title": "Fang's Theme",
+							"composer": "Masashi Hamauzu",
+							"genre": "OST",
+							"year": 2017
+						}
+					]
+				}
+			}
+		]
+	}
+}

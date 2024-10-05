@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<music>
+	<album id="66604">
+		<name>Distant Worlds IV: More Music From Final Fantasy</name>
+		<tracks>
+			<track tracknumber="6"  length="131">
+				<title>Apocalypsis Noctis</title>
+				<alttitle>Apocalypsis Aquarius</alttitle>
+				<composer>Yoko Shimomura</composer>
+				<genre>OST</genre>
+				<year>2017</year>
+			</track>
+			<track id="66047" tracknumber="8" discnumber='1' length="342">
+				<title>Dragonsong</title>
+				<artist>
+					<firstname>Susan</firstname><lastname>Calloway</lastname>
+				</artist>
+				<composer>Nobuo Uematsu</composer>
+				<genre>OST</genre>
+				<year>2017</year>
+			</track>
+			<track id="666051" discnumber="1" length="212">
+				<title>Fang's Theme</title>
+				<genre>OST</genre>
+				<year>2017</year>
+			</track>
+			<track id="666053" tracknumber="14" discnumber="1" length="267">
+				<title>Torn from the Heavens</title>
+				<composer>Masayoshi Soken</composer>
+				<year>2017</year>
+			</track>
+		</tracks>
+	</album>
+	<album id="66601">
+		<name>Distant Worlds: Music From Final Fantasy</name>
+		<tracks id="666011" tracknumber="11" discnumber="1" len="735">
+			<track>
+				<title>Opera</title>
+				<alttitle>Maria and Draco</alttitle>
+				<artist>Maria</artist><artist>Draco</artist><artist>Ralse</artist>
+				<composer>Nobuo Uematsu</composer>
+				<genre>OST</genre>
+				<year>2007</year>
+			</track>
+		</tracks>
+	</album>
+	<album id="66603">
+		<name>Distant Worlds III: More Music From Final Fantasy</name>
+		<tracks id="666028" tracknumber="2" discnumber="1" length="291">
+			<track>
+				<title>Battle &amp; Victory Theme Medley</title>
+				<composer>Nobuo Uematsu</composer>
+				<year>2015</year>
+				<genre>OST</genre>
+			</track>
+		</tracks>
+	</album>
+</music>
